@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_grouplist_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_74dp" >
+
+        <TextView
+            android:id="@+id/tv_grouplist_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_measure_30dp"
+            android:text="家人"
+            android:textColor="#000000"
+            android:textSize="@dimen/common_measure_28sp" />
+
+        <TextView
+            android:id="@+id/tv_grouplist_del_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_grouplist_item_name"
+            android:layout_alignBottom="@+id/tv_grouplist_item_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_measure_30dp"
+            android:text="删除组"
+             android:visibility="gone"
+            android:textColor="#FF4500"
+            android:textSize="@dimen/common_measure_28sp"
+            
+             />
+
+        <TextView
+            android:id="@+id/tv_grouplist_rename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_grouplist_del_group"
+            android:layout_alignBottom="@+id/tv_grouplist_del_group"
+            android:layout_marginRight="@dimen/common_measure_30dp"
+            android:layout_toLeftOf="@+id/tv_grouplist_del_group"
+            android:text="重命名"
+            android:textColor="#0000ff"
+            android:visibility="gone"
+            android:textSize="@dimen/common_measure_28sp" />
+        
+    <include layout="@layout/divider" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_toolbar_bottom" >
+    </RelativeLayout>
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/ll_toolbar_bottom" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/common_measure_80dp" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:background="@drawable/tab_background" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/ll_toolbar_collection" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_24dp" -->
+    <!-- android:layout_marginTop="@dimen/common_measure_14dp" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/iv_toolbar_collection" -->
+    <!-- android:layout_width="@dimen/common_measure_42dp" -->
+    <!-- android:layout_height="@dimen/common_measure_42dp" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_15dp" -->
+    <!-- android:background="@drawable/collection_clicked" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_toolbar_collection" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="个人收藏" -->
+    <!-- android:textColor="#499ddd" -->
+    <!-- android:textSize="@dimen/common_measure_18sp" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/ll_toolbar_record" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_49dp" -->
+    <!-- android:layout_marginTop="@dimen/common_measure_14dp" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/iv_toolbar_record" -->
+    <!-- android:layout_width="@dimen/common_measure_42dp" -->
+    <!-- android:layout_height="@dimen/common_measure_42dp" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_15dp" -->
+    <!-- android:background="@drawable/record" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_toolbar_record" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="通话记录" -->
+    <!-- android:textColor="#989898" -->
+    <!-- android:textSize="@dimen/common_measure_18sp" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/ll_toolbar_contacts" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_49dp" -->
+    <!-- android:layout_marginTop="@dimen/common_measure_14dp" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/iv_toolbar_contacts" -->
+    <!-- android:layout_width="@dimen/common_measure_42dp" -->
+    <!-- android:layout_height="@dimen/common_measure_42dp" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_15dp" -->
+    <!-- android:background="@drawable/contacts" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_toolbar_contacts" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_10dp" -->
+    <!-- android:text="通讯录" -->
+    <!-- android:textColor="#989898" -->
+    <!-- android:textSize="@dimen/common_measure_18sp" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/ll_toolbar_keyboard" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_49dp" -->
+    <!-- android:layout_marginTop="@dimen/common_measure_14dp" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/iv_toolbar_keyboard" -->
+    <!-- android:layout_width="@dimen/common_measure_42dp" -->
+    <!-- android:layout_height="@dimen/common_measure_42dp" -->
+    <!-- android:layout_marginLeft="@dimen/common_measure_15dp" -->
+    <!-- android:background="@drawable/keyboard" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_toolbar_keyboard" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="拨号键盘" -->
+    <!-- android:textColor="#989898" -->
+    <!-- android:textSize="@dimen/common_measure_18sp" /> -->
+    <!-- </LinearLayout> -->
+    <!-- </LinearLayout> -->
+
+    <RadioGroup
+        android:id="@+id/rg_toolbar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn_toolbar_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/collection_clicked"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/common_measure_12dp"
+            android:text="个人收藏"
+            android:textColor="#499ddd"
+            android:textSize="@dimen/common_measure_18sp" />
+
+        <RadioButton
+            android:id="@+id/btn_toolbar_record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/record"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/common_measure_12dp"
+            android:text="通话记录"
+            android:textColor="#989898"
+            android:textSize="@dimen/common_measure_18sp" />
+
+        <RadioButton
+            android:id="@+id/btn_toolbar_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/contacts"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/common_measure_12dp"
+            android:text="通讯录"
+            android:textColor="#989898"
+            android:textSize="@dimen/common_measure_18sp" />
+
+        <RadioButton
+            android:id="@+id/btn_toolbar_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/keyboard"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/common_measure_12dp"
+            android:text="拨号键盘"
+            android:textColor="#989898"
+            android:textSize="@dimen/common_measure_18sp" />
+    </RadioGroup>
+
+</RelativeLayout>

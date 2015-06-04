@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_add_to_collection_mobilephone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp" >
+
+        <TextView
+            android:id="@+id/tv_dialog_add_to_collection_title_phonenum_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="移动13164749999"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+
+        <CheckBox
+            android:id="@+id/cb_dialog_mobilephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_measure_30dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:background="@drawable/rb_selector"
+            android:button="@null"
+            android:clickable="false" />
+
+        <include layout="@layout/divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_add_to_collection_homehone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp" >
+
+        <TextView
+            android:id="@+id/tv_dialog_add_to_collection_title_phonenum_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="住宅13164749999"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+
+        <CheckBox
+            android:id="@+id/cb_dialog_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_measure_30dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:background="@drawable/rb_selector"
+            android:button="@null"
+            android:clickable="false" />
+
+        <include layout="@layout/divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_add_to_collection_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="确定"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+
+        <include layout="@layout/divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_add_to_collection_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+
+        <include layout="@layout/divider" />
+    </RelativeLayout>
+
+</LinearLayout>

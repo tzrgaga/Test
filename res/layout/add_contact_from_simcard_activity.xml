@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_94dp"
+        android:background="@drawable/navigation_background" >
+
+        <TextView
+            android:id="@+id/tv_add_contact_from_simcard_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/common_measure_26dp"
+            android:paddingLeft="@dimen/common_measure_26dp"
+            android:paddingTop="@dimen/common_measure_26dp"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/common_measure_26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/common_measure_16dp"
+            android:text="SIM卡"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/common_measure_32sp" />
+
+        <TextView
+            android:id="@+id/tv_add_contacts_from_simcard_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_measure_9dp"
+            android:paddingBottom="@dimen/common_measure_26dp"
+            android:paddingRight="@dimen/common_measure_26dp"
+            android:paddingTop="@dimen/common_measure_26dp"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/common_measure_26sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_contacts_check_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_74dp"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/cb_add_contact_from_simcard_check_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_measure_30dp"
+                        android:layout_marginRight="@dimen/common_measure_15dp"
+                        android:layout_marginTop="@dimen/common_measure_20dp"
+                        android:background="@drawable/rb_selector"
+                        android:button="@null"
+                        android:clickable="false" />
+
+                    <!-- 联系人信息 -->
+
+                    <TextView
+                        android:id="@+id/tv_contacts_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_20dp"
+                        android:gravity="center_vertical"
+                        android:text="全选"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/common_measure_28sp" />
+                </LinearLayout>
+
+                <include layout="@layout/divider" />
+            </LinearLayout>
+
+            <com.ydlink.ydcontact.View.SlidingLinearLayout
+                android:id="@+id/slidingview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/lv_add_contancts_from_simcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    android:visibility="visible" />
+            </com.ydlink.ydcontact.View.SlidingLinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <com.ydlink.ydcontact.View.QuickAlphabeticBar
+                android:id="@+id/add_contact_from_simcard_fast_scroller"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|right|center"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:background="@null"
+                android:scaleType="centerInside" >
+            </com.ydlink.ydcontact.View.QuickAlphabeticBar>
+
+            <TextView
+                android:id="@+id/fast_position"
+                android:layout_width="@dimen/common_measure_10dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:gravity="center"
+                android:textColor="#3ea0e8"
+                android:textSize="@dimen/common_measure_15sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

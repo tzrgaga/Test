@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_62dp"
+        android:background="#cacacf" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/common_measure_10dp"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:background="@drawable/search_input" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/common_measure_22dp"
+                android:layout_height="@dimen/common_measure_22dp"
+                android:background="@drawable/search_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_measure_6dp"
+                android:text="搜索"
+                android:textColor="#b9b9b9"
+                android:textSize="@dimen/common_measure_22sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_contacts_fragment_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_measure_24dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_measure_30dp"
+                    android:text="本机号码: "
+                    android:textColor="#333333"
+                    android:textSize="@dimen/common_measure_28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 13152484285"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/common_measure_28sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_contancts_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_contacts_fragment_right"
+                android:layout_width="@dimen/common_measure_10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_measure_20dp"
+                android:layout_weight="0.06"
+                android:text="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textColor="#3ea0e8"
+                android:textSize="@dimen/common_measure_15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

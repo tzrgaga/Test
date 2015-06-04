@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/lv_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_222dp"
+         >
+    </ListView>
+    
+    <!-- 新建联系人 -->
+    <RelativeLayout
+        android:id="@+id/rl_keyboard_fragment_new_contact"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/common_measure_74dp" >
+
+        <include layout="@layout/divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_30dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:text="新建联系人"
+            android:textColor="#000000"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+    
+	<!-- 添加至现有联系人 -->
+    <RelativeLayout
+        android:id="@+id/rl_keyboard_fragment_old_contact"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rl_keyboard_fragment_new_contact"
+        android:layout_height="@dimen/common_measure_74dp"
+        android:visibility="gone"
+         >
+		
+        <include layout="@layout/divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_30dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:text="添加至现有联系人"
+            android:textColor="#000000"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_76dp"
+            android:background="#3c3c3c"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_keyboard_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_58dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription=" "
+                android:focusable="false"
+                android:inputType="text|phone"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/common_measure_32sp" />
+        </LinearLayout>
+
+        <com.ydlink.ydcontact.View.KeyboardLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_94dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key1"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key1" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key2"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key2" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key3"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key3" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key3" />
+            </RelativeLayout>
+        </com.ydlink.ydcontact.View.KeyboardLinearLayout>
+
+        <com.ydlink.ydcontact.View.KeyboardLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_94dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key4"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key4" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key5"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key5" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key6"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key6" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key6" />
+            </RelativeLayout>
+        </com.ydlink.ydcontact.View.KeyboardLinearLayout>
+
+        <com.ydlink.ydcontact.View.KeyboardLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_94dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key7"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key7" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key7" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key8"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key8" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key8" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key9"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key9" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key9" />
+            </RelativeLayout>
+        </com.ydlink.ydcontact.View.KeyboardLinearLayout>
+
+        <com.ydlink.ydcontact.View.KeyboardLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_94dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key10"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key10" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key0"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key0" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyboard_key11"
+                android:layout_width="@dimen/common_measure_160dp"
+                android:layout_height="@dimen/common_measure_94dp"
+                android:background="@anim/selector"
+                android:contentDescription="@string/keyboard_fragment_key11" >
+
+                <ImageView
+                    android:layout_width="@dimen/common_measure_56dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/key11" />
+            </RelativeLayout>
+        </com.ydlink.ydcontact.View.KeyboardLinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_70dp"
+            android:background="@anim/selector"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_keyboard_input"
+                android:layout_width="@dimen/common_measure_380dp"
+                android:layout_height="@dimen/common_measure_60dp"
+                android:layout_marginRight="@dimen/common_measure_10dp"
+                android:layout_marginTop="@dimen/common_measure_5dp"
+                android:background="@anim/xml_take"
+                android:contentDescription="@string/keyboard_fragment_take_other"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_keyboard_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_measure_25dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/take_other"
+                    android:paddingLeft="@dimen/common_measure_130dp"
+                    android:paddingRight="@dimen/common_measure_100dp"
+                    android:text="呼叫"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/common_measure_25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_keyboard_del"
+                android:layout_width="@dimen/common_measure_60dp"
+                android:layout_height="@dimen/common_measure_50dp"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:layout_marginRight="@dimen/common_measure_5dp"
+                android:layout_marginTop="@dimen/common_measure_10dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@anim/xml_del"
+                    android:contentDescription="@string/keyboard_fragment_iv_keyboard_del" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

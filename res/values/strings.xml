@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My traning</string>
+
+    <!-- keyboard_fragment.xml -->
+    <string name="keyboard_fragment_key0">0</string>
+    <string name="keyboard_fragment_key1">1</string>
+    <string name="keyboard_fragment_key2">2</string>
+    <string name="keyboard_fragment_key3">3</string>
+    <string name="keyboard_fragment_key4">4</string>
+    <string name="keyboard_fragment_key5">5</string>
+    <string name="keyboard_fragment_key6">6</string>
+    <string name="keyboard_fragment_key7">7</string>
+    <string name="keyboard_fragment_key8">8</string>
+    <string name="keyboard_fragment_key9">9</string>
+    <string name="keyboard_fragment_key10">*</string>
+    <string name="keyboard_fragment_key11">#</string>
+    <string name="keyboard_fragment_iv_keyboard_del">删除</string>
+    <string name="keyboard_fragment_take_other">点此拨打</string>
+
+    <!-- introduction.xml -->
+    <string name="introduction_iv_intorduction_sendmsg">发送短信</string>
+    <string name="introduction_iv_intorduction_phone1">拨打电话</string>
+
+    <!-- introduction_edit.xml -->
+    <string name="introduction_edit_et_introduction_name">姓名</string>
+    <string name="introduction_edit_et_introduction_phoneNum">手机</string>
+    <string name="introduction_edit_et_introduction_phoneNum_home">住宅</string>
+    <string name="introduction_edit_et_introduction_email">邮箱</string>
+
+    <!-- contacts_fragment.xml -->
+    <string name="contacts_fragment_et_search_input">搜索</string>
+
+    <!-- title_layout.xml -->
+    <string name="title_layout_iv_title_layout_left">返回</string>
+    <string name="return_back_btn">返回上一级</string>
+    <string name="title_layout_iv_title_layout_right">添加</string>
+    <string name="title_activity_group_contact">GroupListActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="speadker_on">免提</string>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_copy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="拷贝"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_relay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="转发"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_getphone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提取号码"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_getweb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提取网址"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_getmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提取邮箱地址"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_del"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="删除"
+            android:textColor="#df4526"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+</LinearLayout>

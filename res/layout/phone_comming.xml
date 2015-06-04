@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_measure_64dp"
+        android:text="小名"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/common_measure_38sp" />
+
+    <TextView
+        android:id="@+id/tv_isPhoneing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_measure_22dp"
+        android:text="正在通话..."
+        android:textColor="#ffffff"
+        android:textSize="@dimen/common_measure_24sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_commingphone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_measure_252dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_21dp"
+            android:layout_marginRight="@dimen/common_measure_21dp"
+            android:layout_marginTop="@dimen/common_measure_189dp" >
+
+            <Button
+                android:id="@+id/btn_answer"
+                android:layout_width="@dimen/common_measure_200dp"
+                android:layout_height="@dimen/common_measure_96dp"
+                android:layout_alignParentLeft="true"
+                android:background="@anim/answercall"
+                android:drawableLeft="@drawable/answer"
+                android:paddingLeft="@dimen/common_measure_32dp"
+                android:text="接听"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/common_measure_24sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_end"
+                android:layout_width="@dimen/common_measure_200dp"
+                android:layout_height="@dimen/common_measure_96dp"
+                android:layout_alignParentRight="true"
+                android:background="@anim/endcall"
+                android:drawableLeft="@drawable/endcall"
+                android:paddingLeft="@dimen/common_measure_32dp"
+                android:text="挂断"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/common_measure_24sp" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 通话中 -->
+
+    <LinearLayout
+        android:id="@+id/ll_phoneing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_measure_282dp"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_speakerbg"
+            android:layout_width="@dimen/common_measure_144dp"
+            android:layout_height="@dimen/common_measure_100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/speaker_bg_not_choose" >
+
+            <Button
+                android:id="@+id/btn_speaker_statu"
+                android:layout_width="@dimen/common_measure_48dp"
+                android:layout_height="@dimen/common_measure_48dp"
+                 android:layout_marginTop="@dimen/common_measure_12dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:drawableTop="@drawable/speadkernotchoosed"
+                android:text="@string/speadker_on"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_speaker_statu_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/common_measure_8dp"
+                android:text="@string/speadker_on"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_speaker_statu"
+                android:layout_width="@dimen/common_measure_48dp"
+                android:layout_height="@dimen/common_measure_48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/speadkernotchoosed"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_21dp"
+            android:layout_marginRight="@dimen/common_measure_21dp"
+            android:layout_marginTop="@dimen/common_measure_138dp" >
+
+            <Button
+                android:id="@+id/btn_phoneingEndCall"
+                android:layout_width="@dimen/common_measure_460dp"
+                android:layout_height="@dimen/common_measure_78dp"
+                android:layout_alignParentRight="true"
+                android:background="@anim/phoneing_endcall"
+                android:drawableLeft="@drawable/endcall"
+                android:paddingLeft="@dimen/common_measure_137dp"
+                android:text="结束通话"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/common_measure_24sp" >
+            </Button>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

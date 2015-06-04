@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_chat_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_measure_24dp"
+        android:background="@anim/xml_chat_left"
+        android:paddingLeft="@dimen/common_measure_60dp"
+        android:paddingRight="@dimen/common_measure_15dp"
+        android:paddingTop="@dimen/common_measure_10dp"
+        android:text="This is a test "
+        android:textColor="#2e2e2e"
+        android:textSize="@dimen/common_measure_25sp" />
+
+</LinearLayout>

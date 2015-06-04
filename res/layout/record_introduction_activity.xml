@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_78dp" >
+
+            <TextView
+                android:id="@+id/tv_record_introduction_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_30dp"
+                android:layout_marginTop="@dimen/common_measure_18dp"
+                android:text="小明"
+                android:textColor="#363636"
+                android:textSize="@dimen/common_measure_30sp" />
+
+            <include layout="@layout/divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_78dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/common_measure_10dp" >
+
+                <TextView
+                    android:id="@+id/tv_record_introduction_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_measure_30dp"
+                    android:text="2014年9月28日"
+                    android:textColor="#363636"
+                    android:textSize="@dimen/common_measure_22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_26dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_record_introduction_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_30dp"
+                        android:text="22:18"
+                        android:textColor="#363636"
+                        android:textSize="@dimen/common_measure_22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_record_introduction_calltype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_100dp"
+                        android:text="呼叫电话"
+                        android:textColor="#363636"
+                        android:textSize="@dimen/common_measure_22sp" />
+
+                    <TextView
+                        android:id="@+id/tv_record_introduction_call_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_70dp"
+                        android:text="39分45秒"
+                        android:textColor="#363636"
+                        android:textSize="@dimen/common_measure_22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_record_introduction_call_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_78dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_measure_30dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/common_measure_12dp"
+                    android:text="移动"
+                    android:textColor="#4fb5ff"
+                    android:textSize="@dimen/common_measure_20sp" />
+
+                <TextView
+                    android:id="@+id/tv_record_introduction_mobile_phone"
+                    android:layout_width="@dimen/common_measure_260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#363636"
+                    android:textSize="@dimen/common_measure_26dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_record_intorduction_phone1"
+                android:layout_width="@dimen/common_measure_38dp"
+                android:layout_height="@dimen/common_measure_38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_measure_28dp"
+                android:background="@anim/xml_phone"
+                android:contentDescription="@string/introduction_iv_intorduction_phone1" />
+
+            <ImageView
+                android:id="@+id/iv_record_intorduction_sendmsg"
+                android:layout_width="@dimen/common_measure_38dp"
+                android:layout_height="@dimen/common_measure_38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_measure_37dp"
+                android:layout_toLeftOf="@id/iv_record_intorduction_phone1"
+                android:background="@anim/xml_msg"
+                android:contentDescription="@string/introduction_iv_intorduction_sendmsg" />
+
+            <include layout="@layout/divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_78dp" >
+
+            <include layout="@layout/divider" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_measure_30dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/common_measure_12dp"
+                    android:text="邮箱"
+                    android:textColor="#4fb5ff"
+                    android:textSize="@dimen/common_measure_20sp" />
+
+                <TextView
+                    android:id="@+id/tv_record_introduction_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#363636"
+                    android:textSize="@dimen/common_measure_26dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_record_introduction_add_collection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_78dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_30dp"
+                android:text="添加到个人收藏"
+                android:textColor="#4fb5ff"
+                android:textSize="@dimen/common_measure_26sp" />
+
+            <include layout="@layout/divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_record_introduction_stop_this_incomming"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_78dp" >
+
+            <TextView
+                android:id="@+id/phone_record_state_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_30dp"
+                android:text="阻止此来电号码"
+                android:textColor="#4fb5ff"
+                android:textSize="@dimen/common_measure_26sp" />
+
+            <include layout="@layout/divider" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

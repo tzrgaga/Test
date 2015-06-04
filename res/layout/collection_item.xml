@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_collection_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_74dp" >
+
+        <TextView
+            android:id="@+id/tv_collection_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_measure_30dp"
+            android:text="小青"
+            android:textColor="#000000"
+            android:textSize="@dimen/common_measure_28sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_collection_item_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_measure_18dp"
+            android:paddingRight="@dimen/common_measure_18dp" >
+
+            <ImageView
+                android:layout_width="@dimen/common_measure_34dp"
+                android:layout_height="@dimen/common_measure_34dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="个人收藏详情"
+                android:background="@drawable/details_clicked" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_collection_number_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_measure_30dp"
+            android:layout_toLeftOf="@id/ll_collection_item_details"
+            android:text="移动"
+            android:textColor="#989898"
+            android:textSize="@dimen/common_measure_22sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_del_del"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp" >
+
+        <TextView
+            android:id="@+id/tv_dialog_del_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="将此号码移除个人收藏"
+            android:textColor="#df4526"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+    <include layout="@layout/divider" />
+    <RelativeLayout
+        android:id="@+id/rl_dialog_del_delall_by_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="删除此号码所有通话记录"
+            android:textColor="#df4526"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+    <include layout="@layout/divider" />
+     <RelativeLayout
+        android:id="@+id/rl_dialog_del_delall_missedcalls_by_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="删除此号码未接来电记录"
+            android:textColor="#df4526"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_del_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_86dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+</LinearLayout>

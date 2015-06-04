@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_clicked_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="呼叫13631565757"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_clicked_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发送信息"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_clicked_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加到通讯录"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_clicked_copy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="拷贝"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_clicked_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_68dp"
+        android:background="@anim/xml_clicked" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消"
+            android:textColor="#4fb5ff"
+            android:textSize="@dimen/common_measure_28sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+</LinearLayout>
